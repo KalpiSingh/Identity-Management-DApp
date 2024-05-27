@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identity Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="header" class="navbar navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand">Identity Verifier</a>
+            <div id="account" class="d-flex"></div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <h3>Register Identity</h3>
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Enter your email">
+                </div>
+                <button id="registerButton" class="btn btn-primary">Register</button>
+            </div>
+            <div class="col">
+                <h3>Display User Details</h3>
+                <div class="mb-3">
+                    <label for="displayNameInput" class="form-label">Name:</label>
+                    <input type="text" class="form-control" id="displayNameInput" placeholder="Enter user's name">
+                </div>
+                <div class="mb-3">
+                    <label for="displayEmailInput" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="displayEmailInput" placeholder="Enter user's email">
+                </div>
+                <button id="displayButton" class="btn btn-primary">Display Details</button>
+                <br>
+                <br>
+                <br>
+                <div id="userDetails"></div>
+                
+            </div>
+        </div>
+    </div>
+     
+    <script type="module" src="index.js"></script>
+</body>
+</html>
